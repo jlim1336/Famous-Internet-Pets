@@ -1,0 +1,27 @@
+body {
+  background-image: url('./images/pet-bg.jpg');
+  background-repeat: repeat;
+}
+
+.nav-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  background: #007bff;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.toggle-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+

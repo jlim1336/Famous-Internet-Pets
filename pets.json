@@ -1,0 +1,10 @@
+[
+    {"_id":1,"name":"Balltze","alias":"Cheems","breed":"Shiba Inu","born":"Jan. 9, 2011","death":"Aug. 18, 2023","img":"./images/Balltze.jpg"},
+    {"_id":2,"name":"Kabosu","alias":"Doge","breed":"Shiba Inu","born":"Nov. 2, 2005","death":"May 24, 2024","img":"./images/Kabosu.jpg"},
+    {"_id":3,"name":"Tardar Sauce","alias":"Grumpy Cat","breed":"Mixed Domesitc Cat","born":"Apr. 4, 2012","death":"May 14, 2017","img":"./images/tardar-sauce.jpg"},
+    {"_id":4,"name":"Zazu","alias":"100 Yard Stare Cat","breed":"Grey Tabby Cat","born":"Sept. 5, 2019","death":"Present","img":"./images/Zazu.jpg"},
+    {"_id":5,"name":"Inkky","alias":"Screaming Cat","breed":"Tuxedo Cat","born":"2009","death":"Sept. 27, 2020","img":"./images/Innky.jpg"},
+    {"_id":6,"name":"Smudge","alias":"Cat at Dinner Table","breed":"Domestic Shorthair Cat","born":"May 5, 2015","death":"Present","img":"./images/Smudge.jpg"},
+    {"_id":7,"name":"Mr. Fresh","alias":"Side Eye Cat","breed":"Orange Tabby Cat","born":"Unknown","death":"Present","img":"./images/mr_fresh.jpg"},
+    {"_id":8,"name":"Nelson","alias":"Walter","breed":"Bull Terrier","born":"July 15, 2017","death":"Present","img":"./images/Nelson.jpg"}
+]

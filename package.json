@@ -5,6 +5,17 @@
   },
   "scripts": {
     "start": "node server.js",
-    "stop": "taskkill /F /IM node.exe"
+    "stop": "taskkill /F /IM node.exe",
+    "test": "jest --coverage"
+  },
+  "name": "famous-internet-pets",
+  "description": "A website blog that keeps track of famous internet pets.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.3.0"
   }
 }

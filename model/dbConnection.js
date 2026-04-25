@@ -1,15 +1,18 @@
-const mongoose = require("mongoose");
+require('dotenv').config();
+const mongoose = require('mongoose');
 
-async function connectDB() {
-    const uri = process.env.MONGO_URI || "mongodb://localhost:27017/petsApp";
+exports.connect = async function(where){
+   let uri = process.env.DB_URI; // Default place, prod db
+   if(where==='test') uri = process.env.TESTDB_URI; // test db
+   if(process.env.CI) uri = 'mongodb://adm:secret@localhost:27017'; //CI test 
 
-    try {
-        await mongoose.connect(uri);
-        console.log("MongoDB connected");
-    } catch (err) {
-        console.error("MongoDB connection error:", err);
-        process.exit(1);
-    }
+   try { 
+      await mongoose.connect(uri); //connects to DB
+   } catch (error) { // Catch connection errors
+      console.log(error);
+   }
+} 
+
+exports.disconnect = async function(){
+   await mongoose.connection.close();
 }
-
-module.exports = connectDB;

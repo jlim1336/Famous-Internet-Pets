@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const fs = require("fs");
 const app = express();
-const connectDB = require('./model/DbConnection');
+const connectDB = require('./model/dbConnection.js');
 
 app.use(morgan('dev'));
 
@@ -15,7 +15,7 @@ let port = 4000;
 
 app.use(express.static('public_html'));
 
-connectDB();
+connectDB.connect('test');
 
 // REST endpoints directly here
 app.get('/pets', petsController.getPets);

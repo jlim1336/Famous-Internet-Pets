@@ -2,16 +2,6 @@ const petDAO = require("../model/petsDAO.js");
 
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/testDB")
-.then(() => {
-    console.log("Connected!");
-    process.exit();
-})
-.catch(err => {
-    console.error(err);
-    process.exit(1);
-});
-
 describe("DAO Tests", () => {
 
     test("Return all pets", () => {

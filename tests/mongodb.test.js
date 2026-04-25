@@ -1,22 +1,20 @@
 const mongoose = require("mongoose");
-const { MongoMemoryServer } = require("mongodb-memory-server");
-const dao = require("../model/petsMongoDAO");
+const dao = require("../model/mongodbDAO.js");
+const db = require('../model/dbConnection.js');
+
 
 let mongoServer;
 
-beforeAll(async () => {
-    mongoServer = await MongoMemoryServer.create();
-    await mongoose.connect(mongoServer.getUri());
+beforeAll(function(){
+   db.connect('test');
+});
+afterAll(async function(){
+   await db.disconnect(); 
+}); 
+afterEach(async function(){
+   await dao.deleteAll();
 });
 
-afterEach(async () => {
-    await dao.deleteAll();
-});
-
-afterAll(async () => {
-    await mongoose.disconnect();
-    await mongoServer.stop();
-});
 
 test("Create pet", async () => {
     const pet = await dao.createPet({

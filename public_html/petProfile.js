@@ -79,4 +79,4 @@ async function updatePet(id) {
 
 
 readPets();
-
+console.log("readPets called");

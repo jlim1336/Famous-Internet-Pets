@@ -1,4 +1,4 @@
-const dao = require("../model/petsDAO.js");
+const dao = require("../model/mongodbDAO.js");
 
 exports.getPets = (req, res) => {
     res.json(dao.getAllPets());

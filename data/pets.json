@@ -1,6 +1,6 @@
 [
   {
-    "_id": 1,
+    "id": 1,
     "name": "Balltze",
     "alias": "Cheems",
     "breed": "Shiba Inu",
@@ -9,7 +9,7 @@
     "img": "./images/Balltze.jpg"
   },
   {
-    "_id": 2,
+    "id": 2,
     "name": "Kabosu",
     "alias": "Doge",
     "breed": "Shiba Inu",
@@ -18,7 +18,7 @@
     "img": "./images/Kabosu.jpg"
   },
   {
-    "_id": 3,
+    "id": 3,
     "name": "Tardar Sauce",
     "alias": "Grumpy Cat",
     "breed": "Mixed Domesitc Cat",
@@ -27,7 +27,7 @@
     "img": "./images/tardar-sauce.jpg"
   },
   {
-    "_id": 4,
+    "id": 4,
     "name": "Zazu",
     "alias": "100 Yard Stare Cat",
     "breed": "Grey Tabby Cat",
@@ -36,7 +36,7 @@
     "img": "./images/Zazu.jpg"
   },
   {
-    "_id": 5,
+    "id": 5,
     "name": "Inkky",
     "alias": "Screaming Cat",
     "breed": "Tuxedo Cat",
@@ -45,7 +45,7 @@
     "img": "./images/Innky.jpg"
   },
   {
-    "_id": 6,
+    "id": 6,
     "name": "Smudge",
     "alias": "Cat at Dinner Table",
     "breed": "Domestic Shorthair Cat",
@@ -54,7 +54,7 @@
     "img": "./images/Smudge.jpg"
   },
   {
-    "_id": 7,
+    "id": 7,
     "name": "Mr. Fresh",
     "alias": "Side Eye Cat",
     "breed": "Orange Tabby Cat",
@@ -63,7 +63,7 @@
     "img": "./images/mr_fresh.jpg"
   },
   {
-    "_id": 8,
+    "id": 8,
     "name": "Nelson",
     "alias": "Walter",
     "breed": "Bull Terrier",

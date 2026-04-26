@@ -15,7 +15,7 @@ let port = 4000;
 
 app.use(express.static('public_html'));
 
-connectDB.connect('test');
+connectDB.connect();
 
 // REST endpoints directly here
 app.get('/pets', petsController.getPets);
@@ -28,6 +28,7 @@ app.delete('/pets/:id', petsController.deletePet);
 //     if (!updated) return res.status(404).send("Pet not found");
 //     res.status(200).json(updated);
 // });
+
 
 const server=app.listen(port,hostname,function(){
     console.log(`Server running in ${hostname}:${port}`);

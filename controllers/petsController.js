@@ -1,7 +1,8 @@
 const dao = require("../model/mongodbDAO.js");
 
-exports.getPets = (req, res) => {
-    res.json(dao.getAllPets());
+exports.getPets = async (req, res) => {
+    const pets = await dao.getAllPets();
+    res.json(pets);
 };
 
 exports.createPet = (req, res) => {

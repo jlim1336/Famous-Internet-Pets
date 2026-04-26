@@ -10,7 +10,7 @@ const petSchema = new mongoose.Schema({
     img: String
 });
 
-const Pet = mongoose.model("Pet", petSchema);
+const Pet = mongoose.model("pets", petSchema);
 
 // CREATE
 exports.createPet = async (petData) => {
@@ -27,11 +27,13 @@ exports.getAllPets = async () => {
 
 // UPDATE
 exports.updatePet = async (id, updatedData) => {
-    return await Pet.findOneAndUpdate(
-        { id: Number(id) },
-        updatedData,
-        { new: true }
-    );
+    const result = await Pet.updateOne({ id: Number(id) },{ $set: updatedData } );
+
+    if (result.matchedCount === 0) {
+        return null; // not found
+    }
+
+    return await Pet.findOne({ id: Number(id) });
 };
 
 // DELETE
@@ -40,7 +42,6 @@ exports.deletePet = async (id) => {
     return result.deletedCount > 0;
 };
 
-// EXTRA (useful for tests)
 exports.deleteAll = async () => {
     await Pet.deleteMany({});
 };

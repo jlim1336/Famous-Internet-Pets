@@ -1,4 +1,4 @@
-let pets = []; // global
+//let pets = []; // global
 console.log("petProfile.js loaded");
 // READ
 async function readPets() {
